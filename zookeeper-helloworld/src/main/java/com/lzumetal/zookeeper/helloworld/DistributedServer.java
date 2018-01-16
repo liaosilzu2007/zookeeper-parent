@@ -1,8 +1,7 @@
-package com.ddcx.zookeeper.helloworld;
+package com.lzumetal.zookeeper.helloworld;
 
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
-import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

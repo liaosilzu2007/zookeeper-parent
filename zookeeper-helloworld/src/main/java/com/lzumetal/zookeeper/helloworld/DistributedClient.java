@@ -1,4 +1,4 @@
-package com.ddcx.zookeeper.helloworld;
+package com.lzumetal.zookeeper.helloworld;
 
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
@@ -18,7 +18,7 @@ public class DistributedClient {
 
     private static final Logger log = LoggerFactory.getLogger(DistributedClient.class);
 
-    private static String connectString = "server_01:2181,server_02:2181,server_03:2181";
+    private static String connectString = "server01:2181,server02:2181,server03:2181";
     private static int timeoutMillis = 2000;
     private static String serverGroupNode = "/servers";
 
