@@ -141,9 +141,7 @@ public class BaseDistributedLock {
     private List<String> getSortedChildren() throws Exception {
         try {
             List<String> children = client.getChildren(basePath);
-            Collections.sort(
-                    children,
-                    new Comparator<String>() {
+            Collections.sort(children, new Comparator<String>() {
                         public int compare(String lhs, String rhs) {
                             return getLockNodeNumber(lhs, lockName).compareTo(getLockNodeNumber(rhs, lockName));
                         }
