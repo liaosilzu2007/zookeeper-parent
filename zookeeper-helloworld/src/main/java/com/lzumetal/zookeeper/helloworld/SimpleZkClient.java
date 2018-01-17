@@ -17,7 +17,7 @@ public class SimpleZkClient {
 
     private static final Logger log = LoggerFactory.getLogger(SimpleZkClient.class);
 
-    private static String connectString = "server_01:2181,server_02:2181,server_03:2181";
+    private static String connectString = "server01:2181,server02:2181,server03:2181";
     private static int timeoutMils = 2000;
     private ZooKeeper zooKeeper;
 
@@ -26,7 +26,7 @@ public class SimpleZkClient {
     public void init() throws Exception {
         zooKeeper = new ZooKeeper(connectString, timeoutMils, new Watcher() {
 
-            //收到事件通知后的回调函数（即我们自己的时间处理逻辑）
+            //收到事件通知后的回调函数（即我们自己的实际处理逻辑）
             @Override
             public void process(WatchedEvent event) {
                 log.info(event.getPath() + "---->" + event.getType());
