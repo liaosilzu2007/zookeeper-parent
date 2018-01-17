@@ -11,7 +11,6 @@
     <modules>
         <module>zookeeper-helloworld</module>
         <module>zookeeper-curator</module>
-        <module>zookeeper-distributedlock</module>
     </modules>
 
     <dependencies>
