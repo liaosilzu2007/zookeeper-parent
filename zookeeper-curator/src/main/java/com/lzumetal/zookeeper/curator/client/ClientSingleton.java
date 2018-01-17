@@ -1,13 +1,10 @@
-package com.lzumetal.zookeeper.curator;
+package com.lzumetal.zookeeper.curator.client;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.RetryUntilElapsed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sun.security.jca.GetInstance;
-
-import javax.swing.*;
 
 /**
  * <p>Description: </p>

@@ -1,9 +1,8 @@
-package com.lzumetal.zookeeper.curator;
+package com.lzumetal.zookeeper.curator.client;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sun.rmi.runtime.Log;
 
 /**
  * <p>Description: </p>

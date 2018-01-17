@@ -1,5 +1,6 @@
-package com.lzumetal.zookeeper.curator;
+package com.lzumetal.zookeeper.curator.watcher;
 
+import com.lzumetal.zookeeper.curator.client.ClientSingleton;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.cache.ChildData;
 import org.apache.curator.framework.recipes.cache.PathChildrenCache;
