@@ -20,10 +20,13 @@ public class FakeLimitedResource {
          * 但是在无锁的情况由于sleep了一段时间，很容易抛出异常
          */
         if (!inUse.compareAndSet(false, true)) {
+            //抛出异常后该线程被打断终止
             throw new IllegalStateException("Needs to be used by one client at a time");
         }
         try {
+            System.out.println("thread: ( " + Thread.currentThread().getName() + " )  is operating the resource");
             TimeUnit.SECONDS.sleep((long) (3 * Math.random()));
+            System.out.println("thread: ( " + Thread.currentThread().getName() + " )  has compete operated resource");
         } finally {
             inUse.set(false);
         }

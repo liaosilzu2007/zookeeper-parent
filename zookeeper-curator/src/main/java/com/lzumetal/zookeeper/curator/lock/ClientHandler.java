@@ -35,4 +35,14 @@ public class ClientHandler {
             lock.release(); // always release the lock in a finally block
         }
     }
+
+
+    public void doWorkWithoutLock() throws Exception {
+        try {
+            System.out.println(clientName + " start to do work");
+            resource.use();
+        } finally {
+            System.out.println(clientName + " complete work");
+        }
+    }
 }
