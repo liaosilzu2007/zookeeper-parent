@@ -1,4 +1,4 @@
-package com.ddcx.zookeeper.helloworld;
+package com.lzumetal.zookeeper.helloworld;
 
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
