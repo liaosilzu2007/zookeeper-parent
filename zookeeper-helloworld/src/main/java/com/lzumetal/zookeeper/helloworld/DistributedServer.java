@@ -14,7 +14,7 @@ public class DistributedServer {
 
     private static final Logger log = LoggerFactory.getLogger(DistributedServer.class);
 
-    private static String connectString = "server_01:2181,server_02:2181,server_03:2181";
+    private static String connectString = "server01:2181,server02:2181,server03:2181";
     private static int timeoutMillis = 2000;
     private static String serverGroupNode = "/servers";
     private ZooKeeper zooKeeper;

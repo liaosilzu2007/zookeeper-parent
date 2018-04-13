@@ -1,4 +1,4 @@
-package com.lzumetal.zookeeper.helloworld;
+package com.ddcx.zookeeper.helloworld;
 
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
