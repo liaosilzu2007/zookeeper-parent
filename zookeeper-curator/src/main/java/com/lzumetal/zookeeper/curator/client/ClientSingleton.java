@@ -31,6 +31,7 @@ public class ClientSingleton {
                 .retryPolicy(retryUntilElapsed)
                 .build();
         client.start();
+        log.info("连接完成！！！");
     }
 
     public static CuratorFramework getClient(String ips, int maxElapsedTimeMs, int sleepMsBetweenRetries) {

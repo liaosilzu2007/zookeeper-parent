@@ -20,13 +20,13 @@ public class CuratorWatcherTest {
      */
     private static final String ZK_ADDRESS = "localhost:2181";
     private static final String ZK_PATH = "/zktest";
-    private static final int MAXELAPSEDTIMEMS = 4000;
-    private static final int SLEEPMSBETWEENRETRIES = 2000;
+    private static final int MAX_ELAPSED_TIME_MS = 4000;
+    private static final int SLEEP_MS_BETWEEN_RETRIES = 2000;
 
     public static void main(String[] args) throws Exception {
 
         // 1.Connect to zk
-        CuratorFramework client = ClientSingleton.getClient(ZK_ADDRESS, MAXELAPSEDTIMEMS, SLEEPMSBETWEENRETRIES);
+        CuratorFramework client = ClientSingleton.getClient(ZK_ADDRESS, MAX_ELAPSED_TIME_MS, SLEEP_MS_BETWEEN_RETRIES);
         System.out.println("zk client start successfully!");
 
         // 2.Register watcher

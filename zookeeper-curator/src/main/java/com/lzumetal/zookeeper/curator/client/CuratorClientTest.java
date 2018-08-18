@@ -15,8 +15,8 @@ public class CuratorClientTest {
     private static final Logger log = LoggerFactory.getLogger(CuratorClientTest.class);
 
     private static final String IPS = "localhost:2181";
-    private static final int MAXELAPSEDTIMEMS = 4000;
-    private static final int SLEEPMSBETWEENRETRIES = 2000;
+    private static final int MAX_ELAPSED_TIME_MS = 4000;
+    private static final int SLEEP_MS_BETWEEN_RETRIES = 2000;
     private static final String ZK_PATH = "/zktest";
 
     public static void main(String[] args) throws Exception {
@@ -38,7 +38,7 @@ public class CuratorClientTest {
          */
 
         // 1.Connect to zk
-        CuratorFramework client = ClientSingleton.getClient(IPS, MAXELAPSEDTIMEMS, SLEEPMSBETWEENRETRIES);
+        CuratorFramework client = ClientSingleton.getClient(IPS, MAX_ELAPSED_TIME_MS, SLEEP_MS_BETWEEN_RETRIES);
 
         // 2.Client API test
         // 2.1 Create node
